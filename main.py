@@ -18,6 +18,7 @@ def main():
     path = os.path.join(out_dir, "entry.txt")
     with open(path, "w", encoding="utf-8") as f:
         f.write(LINE)
+    os.chmod(path, 0o644)
 
 
 if __name__ == "__main__":
